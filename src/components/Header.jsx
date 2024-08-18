@@ -73,7 +73,7 @@ const Header = () => {
                                     <a href="#"><FaFacebookF /></a>
                                     <a href="#"><FaTwitter /> </a>
                                     <a href="#"><FaLinkedin /></a>
-                                    <a href="#"><FaGithub /> </a> 
+                                    {/* <a href="#"><FaGithub /> </a>  */}
                                 </div>
         <div className='flex group cursor-pointer text-orange-600 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute before:absolute before:h-[18px] before:bg-[#ff5821] before:w-[1px] before:-left-[20px]'>
             <img className='text-orange-600' src="http://localhost:3000/images/language.png" alt="" />
@@ -109,7 +109,7 @@ const Header = () => {
                     <div className='flex justify-between items-center'>
  
                 <Link to='/'>
-                    <img src="http://localhost:3000/images/kbb.png" alt="" />
+                    <img className="relative -top-3"src="http://localhost:3000/images/kbb.png" alt="logo" />
                 </Link>
                 <div className='justify-center items-center w-[30px] h-[30px] bg-orange text-orange-600 border border-orange rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
                     <span className='text-orange-600'> <FaList/> </span>
@@ -187,11 +187,11 @@ const Header = () => {
         <div className={`w-[300px] z-[9999] transition-all duration-200 fixed ${showShidebar ? '-left-[300px]' : 'left-0 top-0'} overflow-y-auto bg-[#000000] h-screen py-6 px-8 `}>
                 <div className='flex justify-start flex-col gap-6'>
                 <Link to='/'>
-                    <img src="http://localhost:3000/images/logo.png" alt="" />
+                    <img className="mx-auto text-center relative -top-4" src="http://localhost:3000/images/logo.png" alt="logo" />
                 </Link>
     <div className='flex justify-start items-center gap-10'>
     <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute '>
-            <img src="http://localhost:3000/images/language.png" alt="" />
+            <img src="http://localhost:3000/images/language.png" alt="logo" />
             <span><IoMdArrowDropdown /></span>
             <ul className='absolute invisible transition-all top-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
             

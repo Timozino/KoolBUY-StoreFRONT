@@ -44,7 +44,7 @@ const Login = () => {
         if (userInfo) {
             navigate('/')
         }
-    },[successMessage,errorMessage])
+    },[successMessage,errorMessage, dispatch, navigate, userInfo])
 
 
     return (
@@ -100,17 +100,17 @@ const Login = () => {
         <p>Don't Have An Account ? <Link className='text-[#ff5821]' to='/register'> Register</Link> </p>
     </div> 
 
-     <a target='_blank' href="http://localhost:3000/login">
+     <a target='_blank' href="http://localhost:3001/login" rel='noreferrer'>
      <div className='px-8 w-full py-2 bg-[#ff5821] shadow hover:shadow-red-500/50 border border-white text-[#fff] rounded-md flex justify-center items-center gap-2 mb-3'>
             Login As a Seller
      </div>
      </a>
  
-     <a target='_blank' href="http://localhost:3000/register">
+     {/* <a target='_blank' href="http://localhost:3001/register" rel='noreferrer'>
      <div className='px-8 w-full py-2 bg-[#ff5821] shadow hover:shadow-red-500/50 border border-white text-white rounded-md flex justify-center items-center gap-2 mb-3'>
             Register As a Seller
      </div>
-     </a>
+     </a> */}
 
 
 
@@ -130,3 +130,14 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+
+
+
+
+
+
+
+
